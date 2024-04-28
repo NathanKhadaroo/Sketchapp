@@ -1,6 +1,6 @@
-# Art Tracker
+# Sketchapp
 
-Art Tracker is a desktop application built with Electron to help artists track their daily art progress. Each day, the app presents a new drawing prompt, allows users to upload their artwork, and maintains a gallery of past submissions. This tool is designed to help artists maintain a consistent practice schedule, improve over time, and easily revisit their previous works.
+Sketchapp is a desktop application built with Electron to help artists track their daily art progress. Each day, the app presents a new drawing prompt, allows users to upload their artwork, and maintains a gallery of past submissions. This tool is designed to help artists maintain a consistent practice schedule, improve over time, and easily revisit their previous works.
 
 ## Features
 
@@ -11,16 +11,16 @@ Art Tracker is a desktop application built with Electron to help artists track t
 
 ## Installation
 
-To get started with Art Tracker, clone this repository and install its dependencies.
+To get started with Sketchapp, clone this repository and install its dependencies.
 
 ```bash
-git clone https://github.com/NathanKhadaroo/ArtTracker.git
-cd ArtTracker
+git clone https://github.com/NathanKhadaroo/Sketchapp.git
+cd Sketchapp
 npm install
 ```
 
 ## Usage
-To run Art Tracker, use the following command in the project directory:
+To run Sketchapp, use the following command in the project directory:
 
 ```bash
 npm start
@@ -29,7 +29,7 @@ npm start
 This will open the application in a window where you can view the daily prompt, upload your artwork, and browse the gallery.
 
 ## Contributing
-Contributions to Art Tracker are welcome! Whether it's bug fixes, feature enhancements, or documentation improvements, your help is appreciated.
+Contributions to Sketchappare welcome! Whether it's bug fixes, feature enhancements, or documentation improvements, your help is appreciated.
 
 1. Fork the Project
 2. Create your Feature Branch (git checkout -b feature/YourAmazingFeature)
@@ -43,7 +43,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Contact
 Nathan Khadaroo on Twitter: @NathanKhadaroo 
 
-Project Link: https://github.com/NathanKhadaroo/ArtTracker
+Project Link: https://github.com/NathanKhadaroo/Sketchapp
 
 ## Acknowledgements
 Electron

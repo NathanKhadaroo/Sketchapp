@@ -29,7 +29,7 @@ npm start
 This will open the application in a window where you can view the daily prompt, upload your artwork, and browse the gallery.
 
 ## Contributing
-Contributions to Sketchappare welcome! Whether it's bug fixes, feature enhancements, or documentation improvements, your help is appreciated.
+Contributions to Sketchapp are welcome! Whether it's bug fixes, feature enhancements, or documentation improvements, your help is appreciated.
 
 1. Fork the Project
 2. Create your Feature Branch (git checkout -b feature/YourAmazingFeature)

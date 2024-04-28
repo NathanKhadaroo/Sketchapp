@@ -23,7 +23,6 @@ npm install
 To run Art Tracker, use the following command in the project directory:
 
 ```bash
-Copy code
 npm start
 ```
 

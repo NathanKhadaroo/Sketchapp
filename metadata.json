@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2024-04-27",
+    "filename": "download (76).jpeg",
+    "filepath": "/Users/nathankhadaroo/Desktop/art-tracker/SavedImages/download (76).jpeg",
+    "timeTaken": "time test",
+    "materials": "material test",
+    "prompt": "Mona Lisa"
+  },
+  {
+    "date": "2024-04-26",
+    "filename": "gogh-vincent-van-sunflowers.jpg",
+    "filepath": "/Users/nathankhadaroo/Desktop/art-tracker/SavedImages/gogh-vincent-van-sunflowers.jpg",
+    "timeTaken": "time test2",
+    "materials": "material test2",
+    "prompt": "Sunflowers"
+  },
+  {
+    "date": "2024-04-27",
+    "filename": "unnamed (1).jpg",
+    "filepath": "/Users/nathankhadaroo/Desktop/art-tracker/SavedImages/unnamed (1).jpg",
+    "timeTaken": "time test3",
+    "materials": "material test3",
+    "prompt": "Queen"
+  }
+]

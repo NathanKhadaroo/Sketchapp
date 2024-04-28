@@ -1,0 +1,196 @@
+/* Define root-level custom properties (CSS variables) for theme colors */
+
+:root {
+    --primary-color: #556270;  /* Subtle slate blue for primary elements */
+    --accent-color: #CCCCCC;  /* Soft teal for accents */
+    --background-color: #303030;  /* Dark grey, slightly lighter than before for contrast */
+    --text-color: #CCCCCC;  /* Light grey for text, providing sufficient contrast */
+    --panel-background: #3E3E3E;  /* Slightly darker grey for panels like tabs */
+    --border-color: #3E3E3E;  /* Same as panel background for seamless borders */
+}
+
+/* Basic reset to ensure consistency across browsers */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif; /* Ensures typography is clean and modern */
+}
+
+/* Universal box-sizing */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Main styling for the application */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    flex: 1; /* Allows the body to fill the entire height of the viewport */
+}
+
+/* Styling for navigation tabs */
+.tab {
+    width: 100%; /* Ensure tabs stretch across the full width of their container */
+    background-color: var(--panel-background);
+    overflow: hidden; /* Keeps the tab buttons contained within the tab bar */
+}
+
+.tab button {
+    padding: 10px 20px;
+    background-color: inherit;
+    border: none; /* No borders for a clean look */
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.tab button:hover {
+    background-color: #555; /* Darker than panel background for a subtle hover effect */
+}
+
+.tab button.active {
+    background-color: var(--accent-color);
+    color: white; /* Ensures text is visible against the accent background */
+}
+
+/* Styling for content within tabs */
+.tabcontent {
+    display: none; /* Hidden by default, shown when its tab is active */
+    padding: 20px;
+    width: 100%;
+    height: calc(100vh - 50px); /* Adjusts height to account for tab button height */
+    overflow: auto; /* Allows scrolling if content overflows */
+    background-color: var(--panel-background);
+    flex-direction: column;
+    justify-content: center; /* Vertically centers content */
+    align-items: center; /* Horizontally centers content */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    #Upload input[type="text"], #Upload input[type="file"] {
+        width: 95%;  /* Allows the inputs to be slightly wider on smaller screens */
+        margin: 10px 0;  /* Increased spacing for easier interaction on touch devices */
+    }
+}
+
+
+/* Apply flexbox properties directly to the Upload tab */
+#Upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Center vertically */
+    align-items: center;      /* Center horizontally */
+    width: 100%;              /* Use full width of its container */
+    height: 100%;             /* Use full height available */
+    text-align: center;       /* Ensure text elements are also centered */
+}
+
+#Upload input[type="text"] {
+    width: 80%;  /* Adjusts the width to 80% of their container */
+    padding: 10px;  /* Adds some padding inside the input for better text visibility */
+    margin: 5px 0;  /* Adds vertical spacing around each input */
+    box-sizing: border-box;  /* Includes padding and border in the width calculation */
+}
+
+/* Styles for gallery */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #AAA;
+}
+
+/* Button styles */
+.button, button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover, button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments for better mobile experience */
+@media (max-width: 768px) {
+    img {
+        width: 50%; /* Larger tap targets on smaller screens */
+    }
+    .tab button {
+        padding: 12px;
+        font-size: 14px;
+    }
+    .tabcontent, .modal-content {
+        padding: 10px;
+    }
+    .button, button {
+        width: 100%; /* Easier to tap on mobile */
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+#wrapper{
+margin:0 auto;
+margin-left:auto;
+margin-right:auto;
+}

@@ -43,8 +43,7 @@
             "owner": "NathanKhadaroo",
             "name": "Sketchapp"
           },
-          "draft": true,
-          "prerelease": false
+          "draft": false
         }
       }]
     }
